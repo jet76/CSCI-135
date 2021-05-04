@@ -1,4 +1,4 @@
-# Part 2.  
+# Part 2  
 
 In this part you will design and create your own recursive fractal. Your job is to write a program Art.java that takes *one* integer command-line argument *N* (to control the depth of recursion) and produces a *recursive* pattern of your own choosing. It should work and stay within the drawing window for values 1 through 7. You are free to choose a geometric pattern (like, but not too similar to, Htree or Sierpinski) or a random construction. Your design should not be easy to generate with iteration alone. Originality and creativity in the design will be a factor in your grade.  
 
