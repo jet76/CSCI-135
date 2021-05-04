@@ -1,4 +1,4 @@
-# Part 1.  
+# Part 1  
 
 The *Sierpinski triangle* is another example of a fractal pattern like the H-tree pattern we covered in the [lecture on recursion](https://katie.cs.mtech.edu/classes/archive/f13/csci135/slides/135-recursion.pdf). The Polish mathematician Wacław Sierpiński described the pattern in 1915, but it has appeared in Italian art since the 13th century. Though the Sierpinski triangle looks complex, it can be generated with a short recursive program. Your task is to write a program Sierpinski.java with a recursive function sierpinski() and a main() function that calls the recursive function once, and plots the result using standard drawing. Think recursively: sierpinski() should draw one filled equilateral triangle (pointed downwards) and then call itself recursively 3 times (with an appropriate stopping condition). When writing your program, exercise modular design: include a (non-recursive) function filledTriangle() that draws a filled equilateral triangle of a specified size at a specified location.  
 
