@@ -29,7 +29,7 @@ Write a program to simulate plucking a guitar string using the Karplus-Strong al
 
 <pre>
   public class RingBuffer  
-  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-  
+  -----------------------------------------------------------------------------------------  
             RingBuffer(int capacity)  // create an empty ring buffer, with given max capacity  
       int   size()                    // return number of items currently in the buffer  
   boolean   isEmpty()                 // is the buffer empty (size equals zero)?  
@@ -81,7 +81,7 @@ Size after wrap-around is 100
 
 <pre>
   public class GuitarString
-  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-  
+  ------------------------------------------------------------------------------------------------------------------------  
        GuitarString(double frequency)  // create a guitar string of the given frequency, using a sampling rate of 44,100  
        GuitarString(double[] init)     // create a guitar string whose size and initial values are given by the array  
   void pluck()                         // set the buffer to white noise  
