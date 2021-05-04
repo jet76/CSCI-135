@@ -58,7 +58,7 @@ For example, if the player has a speed of 100 and is currently at an *x-position
 
 **How do I make the drawn text bold like yours?** You need to set the font used by StdDraw. A single call at the start of your program such as StdDraw.setFont(new Font("SansSerif", Font.BOLD, 18)) will do the job.  
 
-**How long should I pause between steps in my animation loop?* We used StdDraw.show(10).  
+**How long should I pause between steps in my animation loop?** We used StdDraw.show(10).  
 
 **I can't print out an object's state to the console window because the instance variables are private. How do I do this?** You should implement toString() methods in your classes. These methods return a String containing all the details of an object's state. toString() gets called automatically whenever you try and append an object to a String, for example: System.out.println("OBJ + " + myObj)  
 
