@@ -46,8 +46,8 @@ Guess a number between 1-100? 42
 You nailed it!  
 It took you 8 guesses.  
 
-**How do I read in a number from the user?** You need to use download the [StdIn.java](StdIn.java) class and place it in the same directory as your [NumberHunt.java](NumberHunt.java) program. When you want your program to read in an int from the user, call the method StdIn.readInt().
+**How do I read in a number from the user?** You need to use download the [StdIn.java](StdIn.java) class and place it in the same directory as your [NumberHunt.java](NumberHunt.java) program. When you want your program to read in an int from the user, call the method StdIn.readInt(). For an example program, see [OrderProduct.java](https://katie.cs.mtech.edu/classes/archive/f13/csci135/examples/OrderProduct.java).
 
 **How do I check if a command line argument was given?** You can use args.length to find out how many command line arguments were sent in. If args.length is zero, you know you need to draw a random number. If args.length is greater than zero, you can obtain the target value from args[0].  
 
-**How do I draw a random number?** You want to use the Math.random() method.  
+**How do I draw a random number?** You want to use the Math.random() method. Check out the [TwoDice.java](https://katie.cs.mtech.edu/classes/archive/f13/csci135/examples/TwoDice.java) example.
