@@ -12,11 +12,11 @@ Write a program to simulate plucking a guitar string using the Karplus-Strong al
 
 * *Plucking the string.* The excitation of the string can contain energy at any frequency. We simulate the excitation with *white noise*: set each of the *N* displacements to a random real number between -1/2 and +1/2.  
 
-![White noise](white-noise.png)  
+  ![White noise](white-noise.png)  
 
 * *The resulting vibrations.* After the string is plucked, the string vibrates. The pluck causes a displacement which spreads wave-like over time. The Karplus-Strong algorithm simulates this vibration by maintaining a *ring buffer* of the *N* samples: the algorithm repeatedly deletes the first sample from the buffer and adds to the end of the buffer the average of the first two samples, scaled by an *energy decay factor* of 0.996.  
 
-![the Karplus-Strong update](karplus-strong.png)  
+  ![the Karplus-Strong update](karplus-strong.png)  
 
 *Why it works?* The two primary components that make the Karplus-Strong algorithm work are the ring buffer feedback mechanism and the averaging operation.  
 
@@ -30,44 +30,44 @@ Write a program to simulate plucking a guitar string using the Karplus-Strong al
 <pre>
   public class RingBuffer  
   -----------------------------------------------------------------------------------------  
-            RingBuffer(int capacity)  // create an empty ring buffer, with given max capacity  
-      int   size()                    // return number of items currently in the buffer  
-  boolean   isEmpty()                 // is the buffer empty (size equals zero)?  
-  boolean   isFull()                  // is the buffer full  (size equals capacity)?  
-     void   enqueue(double x)         // add item x to the end  
-   double   dequeue()                 // delete and return item from the front  
-   double   peek()                    // return (but do not delete) item from the front  
+          RingBuffer(int capacity)  // create an empty ring buffer, with given max capacity  
+      int size()                    // return number of items currently in the buffer  
+  boolean isEmpty()                 // is the buffer empty (size equals zero)?  
+  boolean isFull()                  // is the buffer full  (size equals capacity)?  
+     void enqueue(double x)         // add item x to the end  
+   double dequeue()                 // delete and return item from the front  
+   double peek()                    // return (but do not delete) item from the front  
 </pre>
 
 Since the ring buffer has a known maximum capacity, implement it using a double array of that length. For efficiency, use *cyclic wrap-around*: Maintain one integer instance variable first that stores the index of the least recently inserted item; maintain a second integer instance variable last that stores the index one beyond the most recently inserted item. To insert an item, put it at index last and increment last. To remove an item, take it from index first and increment first. When either index equals capacity, make it wrap-around by changing the index to 0.  
 
 Implement RingBuffer to throw an exception if the client attempts to dequeue() or peek() from an empty buffer or enqueue() into a full buffer.  
 
-![Ring buffer](ring-buffer.png)  
+  ![Ring buffer](ring-buffer.png)  
 
 You can test your RingBuffer data type on the following toy client, using the main() provided. It enqueues the numbers 1 through N, and then repeatedly dequeues the first two, and enqueues their sum.  
 
-```
-  public static void main(String[] args) 
-  {
-      int N = Integer.parseInt(args[0]);
-      RingBuffer buffer = new RingBuffer(N);  
-      for (int i = 1; i <= N; i++) 
-      {
-          buffer.enqueue(i);
-      }
-      double t = buffer.dequeue();
-      buffer.enqueue(t);
-      System.out.println("Size after wrap-around is " + buffer.size());
-      while (buffer.size() >= 2) 
-      {
-          double x = buffer.dequeue();
-          double y = buffer.dequeue();
-          buffer.enqueue(x + y);
-      }
-      System.out.println(buffer.peek());
-  }
-```
+  ```
+    public static void main(String[] args) 
+    {
+        int N = Integer.parseInt(args[0]);
+        RingBuffer buffer = new RingBuffer(N);  
+        for (int i = 1; i <= N; i++) 
+        {
+            buffer.enqueue(i);
+        }
+        double t = buffer.dequeue();
+        buffer.enqueue(t);
+        System.out.println("Size after wrap-around is " + buffer.size());
+        while (buffer.size() >= 2) 
+        {
+            double x = buffer.dequeue();
+            double y = buffer.dequeue();
+            buffer.enqueue(x + y);
+        }
+        System.out.println(buffer.peek());
+    }
+  ```
 
 % java RingBuffer 10  
 Size after wrap-around is 10  
