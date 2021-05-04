@@ -15,3 +15,7 @@ Write a program Pattern.java that takes two integer command-line arguments N and
 % java Pattern 0 2  
  
 % java Pattern 2 -2  
+
+---
+
+This README was adapted from an assignment page at Montana Tech: https://katie.cs.mtech.edu/classes/archive/f13/csci135/assign/loops/
