@@ -40,6 +40,8 @@ The object of the game is to avoid any bombs hitting the ground and destroying y
 **Nukes.** After you score ten points, you gain the power of activating a nuke that destroys all falling bombs. You should indicate the nuke is available by putting an asterisk after the number in the scoreboard. The nuke is activated by pressing the spacebar. The screen should flash red for 100 milliseconds when the nuke is fired and then all bombs should be destroyed. Be sure to count the destroyed bombs in your score. After using the nuke, the user has to laser 10 more bombs in the normal way before the nuke can be used again. You can only have one nuke in your stockpile.  
 Is there an easy way to generate random numbers in a certain integer or double range? You can use the static methods in StdRandom.java to help you do this.
 
+---
+
 **How long should I pause between steps in my animation loop?** We used StdDraw.show(10).  
 
 **How do I draw a line?** StdDraw has a method for drawing a straight line between two points: StdDraw.line(double x1, double y1, double x2, double y2).  
@@ -56,3 +58,4 @@ Is there an easy way to generate random numbers in a certain integer or double r
 
 ---
 
+This README was adapted from an assignment page at Montana Tech: https://katie.cs.mtech.edu/classes/archive/f13/csci135/assign/bombs/
