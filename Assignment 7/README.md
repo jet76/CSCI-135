@@ -26,8 +26,8 @@ Write a program to simulate plucking a guitar string using the Karplus-Strong al
 **Getting started** You will be developing three classes in this assignment, RingBuffer.java, GuitarString.java, and GuitarHero.java. You will need to create these files from scratch implementing the APIs prescribed on this page. You will also need the support classes [StdAudio.java](StdAudio.java) and [StdDraw.java](StdDraw.java).  
 
 **Ring buffer.** Your first task is to create a data type to model the ring buffer. Write a class named RingBuffer that implements the following API:  
-  public class RingBuffer
-  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
+  public class RingBuffer  
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-  
   RingBuffer(int capacity)      // create an empty ring buffer, with given max capacity  
   int size()                    // return number of items currently in the buffer  
   boolean isEmpty()             // is the buffer empty (size equals zero)?  
