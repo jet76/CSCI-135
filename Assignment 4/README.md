@@ -150,3 +150,7 @@ Average level    :    -0.000015
 Max level        :     0.965667  
 Below 1% max (%) :    32.031290  
 Below 5% max (%) :    54.441321  
+
+---
+
+This README was adapted from an assignment page at Montana Tech: https://katie.cs.mtech.edu/classes/archive/f13/csci135/assign/audio/
