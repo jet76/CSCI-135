@@ -2,7 +2,7 @@
 
 You are a communications officer onboard an [E-3 Sentry AWACS](http://en.wikipedia.org/wiki/Boeing_E-3_Sentry) surveillance aircraft. Your radar equipment generates a file containing all radar contacts within your region. Each radar contact is given by its [UTM coordinates](http://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system). UTM coordinates consist of two numbers, an easting and a northing. The easting specifies how many meters the contact is to the east of a fixed grid reference location. Similarly the northing is how far the contact is north of the grid reference.  
 
-In addition to the location of every aircraft, your equipment also queries the transponder of all aircraft to obtain their call sign. Only friendly aircraft respond with a call sign. Other unknown or hostile aircraft are assigned a question mark as a call sign. Here is radar4.txt, a small example file showing four contacts, two friendly and two unknown:  
+In addition to the location of every aircraft, your equipment also queries the transponder of all aircraft to obtain their call sign. Only friendly aircraft respond with a call sign. Other unknown or hostile aircraft are assigned a question mark as a call sign. Here is [radar4.txt](radar4.txt), a small example file showing four contacts, two friendly and two unknown:  
 
 4  
 34754 12029 EJ-475  
