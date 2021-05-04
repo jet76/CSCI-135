@@ -20,6 +20,7 @@ The first example usage below shows the command line arguments taken by the prog
 
 **Example usage:**  
 
+```console
 % java AudioEffects  
 AudioEffects <infile> <effect> [options]  
 
@@ -35,13 +36,17 @@ Effects:
   echo    <secs> <factor> <out file>  - add an echo to audio  
 
 Supports only 44.1 kHz mono 16-bit signed WAV audio files.  
+```
 
 **Reverse:**  
 
+```console
 % java AudioEffects piano.wav reverse piano_reverse.wav  
 Effect: reverse  
 Wrote 226800 samples to piano_reverse.wav  
+```
 
+```console
 % java AudioEffects piano_reverse.wav stats  
 Effect: stats  
 Samples          :       226800  
@@ -50,13 +55,17 @@ Average level    :     0.000044
 Max level        :     0.434431  
 Below 1% max (%) :     3.113316  
 Below 5% max (%) :    15.427690  
+```
 
 **Loop:**  
 
+```console
 % java AudioEffects scratch.wav loop 4 scratch_loop4.wav  
 Effect: loop  
 Wrote 282036 samples to scratch_loop4.wav  
+```
 
+```console
 % java AudioEffects scratch_loop4.wav stats  
 Effect stats  
 Samples          :       282036  
@@ -65,16 +74,22 @@ Average level    :    -0.001621
 Max level        :     1.000000  
 Below 1% max (%) :    34.224000  
 Below 5% max (%) :    59.749819  
+```
 
+```console
 % java AudioEffects scratch.wav loop -43 scratch_loop-43.wav  
 Effect: loop  
+```
 
 **Merge:**  
 
+```console
 % java AudioEffects cow.wav merge chimes.wav cow_chimes.wav  
 Effect: merge  
 Wrote 275015 samples to cow_chimes.wav  
+```
 
+```console
 % java AudioEffects cow_chimes.wav stats  
 Effect: stats  
 Samples          :       275015  
@@ -83,11 +98,15 @@ Average level    :    -0.000075
 Max level        :     0.388287  
 Below 1% max (%) :    28.735524  
 Below 5% max (%) :    65.232442  
+```
 
+```console
 % java AudioEffects beatbox.wav merge harp.wav beatbox_harp.wav  
 Effect: merge  
 Wrote 89491 samples to beatbox_harp.wav  
+```
 
+```console
 % java AudioEffects beatbox_harp.wav stats  
 Effect: stats  
 Samples          :        89491  
@@ -96,13 +115,17 @@ Average level    :     0.000768
 Max level        :     0.509171  
 Below 1% max (%) :    25.547820  
 Below 5% max (%) :    63.730431  
+```
 
 **Cut:**
 
+```console
 % java AudioEffects dialup.wav cut 4.0 5.0 dialup_cut4-5.wav  
 Effect: cut  
 Wrote 44100 samples to dialup_cut4-5.wav  
+```
 
+```console
 % java AudioEffects dialup_cut4-5.wav stats  
 Effect: stats  
 Samples          :        44100  
@@ -111,19 +134,27 @@ Average level    :     0.017001
 Max level        :     0.324198  
 Below 1% max (%) :     3.269841  
 Below 5% max (%) :    24.467120  
+```
 
+```console
 % java AudioEffects dialup.wav cut 4.0 50.0 dialup_cut4-50.wav  
 Effect: cut  
+```
 
+```console
 % java AudioEffects dialup.wav cut 5.0 4.0 dialup_cut5-4.wav  
 Effect: cut  
+```
 
 **Pad:**  
 
+```console
 % java AudioEffects buzzer.wav pad 1.0 2.0 buzzer_pad1-2.wav  
 Effect: pad  
 Wrote 216969 samples to buzzer_pad1-2.wav  
+```
 
+```console
 % java AudioEffects buzzer_pad1-2.wav stats  
 Effect: stats  
 Samples          :       216969  
@@ -132,16 +163,23 @@ Average level    :    -0.000004
 Max level        :     0.997925  
 Below 1% max (%) :    62.104725  
 Below 5% max (%) :    66.364319  
+```
 
+```console
 % java AudioEffects buzzer.wav pad -10.0 -20.0 buzzer_pad-10-20.wav  
 Effect: pad  
+```
+
 
 **Echo:** 
 
+```console
 % java AudioEffects singer.wav echo 0.5 0.6 singer_echo_0.5_0.6.wav  
 Effect: echo  
 Wrote 680597 samples to singer_echo_0.5_0.6.wav  
+```
 
+```console
 % java AudioEffects singer_echo_0.5_0.6.wav stats  
 Effect: stats  
 Samples          :       680597  
@@ -150,6 +188,7 @@ Average level    :    -0.000015
 Max level        :     0.965667  
 Below 1% max (%) :    32.031290  
 Below 5% max (%) :    54.441321  
+```
 
 ---
 
