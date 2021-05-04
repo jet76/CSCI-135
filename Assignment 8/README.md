@@ -38,9 +38,10 @@ The object of the game is to avoid any bombs hitting the ground and destroying y
 **Scoring.** You should display a score in the upper-left corner. You get one point for every bomb you destroy. In the case of a splitter, you get a point for destroying the big bomb and another two if you successfully destroy both bomblets.  
 
 **Nukes.** After you score ten points, you gain the power of activating a nuke that destroys all falling bombs. You should indicate the nuke is available by putting an asterisk after the number in the scoreboard. The nuke is activated by pressing the spacebar. The screen should flash red for 100 milliseconds when the nuke is fired and then all bombs should be destroyed. Be sure to count the destroyed bombs in your score. After using the nuke, the user has to laser 10 more bombs in the normal way before the nuke can be used again. You can only have one nuke in your stockpile.  
-Is there an easy way to generate random numbers in a certain integer or double range? You can use the static methods in StdRandom.java to help you do this.
 
 ---
+
+**Is there an easy way to generate random numbers in a certain integer or double range?** You can use the static methods in [StdRandom.java](StdRandom.java) to help you do this.
 
 **How long should I pause between steps in my animation loop?** We used StdDraw.show(10).  
 
@@ -55,6 +56,15 @@ Is there an easy way to generate random numbers in a certain integer or double r
 **How do I draw in a specific RGB color?** You need to create a new Color object, constructing it with the values for the red, green, and blue components. For example, to create a new color halfway be/tween red and blue you would do: Color c = new Color(0.5f, 0.0f, 0.5f); Note that the constructor to Color does not take double parameters, so you may need to cast things to a float. To be able to use the Color class, you'll need to import java.awt.*;  
 
 **What mouse related methods do I need?** You'll need StdDraw.mousePressed() to decide if the user is currently holding down the mouse button. You'll also need StdDraw.mouseX() and StdDraw.mouseY() to determine the mouse pointer's location. Note that the Bomb class is exhibiting good data encapsulation, it doesn't actually know or care how clients are determining when and where user actions occur. This is the job of BombsAway and so all mouse and keyboard input should be handled in this client class and not inside the Bomb class.  
+
+---
+
+**Extra credit.** There are plenty of possibilities to improve the game. For example:  
+* Add sounds and better graphics.
+* Create a new object City. Cities appear at the bottom of the screen. Start the game with a single city and add additional cities as the game progresses. You'll want to create an ArrayList to track the current cities. The game ends if all your cities are destroyed. The number of cities could serve as a score multiplier since it is harder to defend more cities.
+* Make the bombs have x-velocities so they don't fall straight down. Be sure to to only count bombs landing on the screen.
+Instead of a laser, launch missiles at the current mouse location. A missile should be an object that takes time to reach its target location. You'll want to create an ArrayList to track the current missiles in flight. When it reaches the target, make the missile explode and destroy any bombs that are close to the explosion. This is like the classic arcade game Missile Command. You can play an online version of it here.
+* Create a Bomber object. Bombers fly across the screen at a random altitude dropping the occasional small bomb. Bombers can be shot down with your laser.
 
 ---
 
