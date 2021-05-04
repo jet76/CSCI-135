@@ -7,7 +7,7 @@ Your program shall take one integer command-line argument N, to control the dept
 **API specification.** Your program Sierpinski.java must be organized as a library of static methods with the following API:  
 
   public class Sierpinski  
-  --------------------------------------------------------------------------------  
+  \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-  
   void filledTriangle(double x, double y, double s)     // draw shaded equilateral triangle with  
                                                            bottom vertex (x, y), side length s  
 
