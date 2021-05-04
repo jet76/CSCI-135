@@ -51,3 +51,7 @@ It took you 8 guesses.
 **How do I check if a command line argument was given?** You can use args.length to find out how many command line arguments were sent in. If args.length is zero, you know you need to draw a random number. If args.length is greater than zero, you can obtain the target value from args[0].  
 
 **How do I draw a random number?** You want to use the Math.random() method. Check out the [TwoDice.java](https://katie.cs.mtech.edu/classes/archive/f13/csci135/examples/TwoDice.java) example.
+
+---
+
+This README was adapted from an assignment page at Montana Tech: https://katie.cs.mtech.edu/classes/archive/f13/csci135/assign/input/
