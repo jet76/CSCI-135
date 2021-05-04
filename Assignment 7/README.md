@@ -159,7 +159,7 @@ The *i*th character of the string corresponds to a frequency of 440 × 2<sup>(i 
 
                                               w q q  
         8       u       7       y             o p p  
-i p z v b z p b n z p n d \[ i d z p i p z p i u i i  
+i p z v b z p b n z p n d [ i d z p i p z p i u i i  
 
 What is this familiar melody?  
 
