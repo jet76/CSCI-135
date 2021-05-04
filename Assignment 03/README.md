@@ -27,7 +27,7 @@ thrust.wav yay.wav explosion.wav
 \# Background image is from one of the NASA Mars rovers.  
 \#  
 \# Description of values:  
-\#  <width in pixels> <height in pixels>  
+\#  \<width in pixels\> \<height in pixels\>  
 \#  <background image>  
 \#  <normal ship image> <bottom thrusters> <left thrusters> <right thrusters> <ship landed> <ship crashed>  
 \#  <horizontal distance, ship center to edge of thrusters> <vertical distance, ship center to bottom edge of thrusters>  
