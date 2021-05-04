@@ -63,7 +63,7 @@ The object of the game is to avoid any bombs hitting the ground and destroying y
 * Add sounds and better graphics.
 * Create a new object City. Cities appear at the bottom of the screen. Start the game with a single city and add additional cities as the game progresses. You'll want to create an ArrayList to track the current cities. The game ends if all your cities are destroyed. The number of cities could serve as a score multiplier since it is harder to defend more cities.
 * Make the bombs have x-velocities so they don't fall straight down. Be sure to to only count bombs landing on the screen.
-Instead of a laser, launch missiles at the current mouse location. A missile should be an object that takes time to reach its target location. You'll want to create an ArrayList to track the current missiles in flight. When it reaches the target, make the missile explode and destroy any bombs that are close to the explosion. This is like the classic arcade game Missile Command. You can play an online version of it here.
+Instead of a laser, launch missiles at the current mouse location. A missile should be an object that takes time to reach its target location. You'll want to create an ArrayList to track the current missiles in flight. When it reaches the target, make the missile explode and destroy any bombs that are close to the explosion. This is like the classic arcade game [Missile Command](http://en.wikipedia.org/wiki/Missile_Command). You can play an online version of it [here](http://www.mindjolt.com/atari-missile-command.html).
 * Create a Bomber object. Bombers fly across the screen at a random altitude dropping the occasional small bomb. Bombers can be shot down with your laser.
 
 ---
