@@ -69,13 +69,17 @@ public static void main(String[] args)
 }
 ```
 
+```
 % java RingBuffer 10  
 Size after wrap-around is 10  
 55.0  
+```
 
+```
 % java RingBuffer 100  
 Size after wrap-around is 100  
 5050.0  
+```
 
 **Guitar string.** Next, create a data type to model a vibrating guitar string. Write a class named GuitarString that implements the following API:  
 
@@ -164,8 +168,9 @@ i p z v b z p b n z p n d [ i d z p i p z p i u i i
 </pre>
 
 What is this familiar melody?  
-
+```
   nn//SS/ ..,,mmn //..,,m //..,,m nn//SS/ ..,,mmn   (S = space)  
+```
 
 **Do I need to follow the prescribed API?** Yes, we will be testing the methods in the API directly. If your method has a different signature or does not behave as specified, you will lose a substantial number of points. You may not add public methods to the API; however, you may add private methods (which are only accessible in the class in which they are declared).  
 
@@ -187,3 +192,11 @@ What is this familiar melody?
 **How do I use keyboard.indexOf(key)?** If keyboard is a String and key is a character, then keyboard.indexOf(key) return the integer index of the first occurrence of the character key in the string keyboard (or -1 if it does not occur).  
 
 **Should I hardwire the constants 44,100, 110.0, 440.0, 880.0, and 37 in my program?** No, in general, we will deduct if you use an unnamed constant (such as 37) in your program more than once. We recommend using the name SAMPLING_RATE for 44,100 and CONCERT_A for 440. But you need not name all of the constants in the formula 2<sup>(i - 24) / 12</sup>.  
+
+---
+
+This assignment was originally developed by these folks at Princeton: Andrew Appel, Jeff Bernstein, Maia Ginsburg, Ken Steiglitz, Ge Wang, and Kevin Wayne.
+http://introcs.cs.princeton.edu/java/assignments/guitar.html
+
+---
+
