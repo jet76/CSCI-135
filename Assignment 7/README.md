@@ -157,9 +157,11 @@ This keyboard arrangement imitates a piano keyboard: The "white keys" are on the
 
 The *i*th character of the string corresponds to a frequency of 440 × 2<sup>(i - 24) / 12</sup>, so that the character 'q' is 110Hz, 'i' is 220Hz, 'v' is 440Hz, and ' ' is 880Hz. Don't even think of including 37 individual GuitarString variables or a 37-way if statement! Instead, create an array of 37 GuitarString objects and use keyboard.indexOf(key) to figure out which key was typed. Make sure your program does not crash if a key is played that is not one of your 37 notes. You can test your GuitarHero program by typing the following into your guitar to get the beginning of Led Zeppelin's *Stairway to Heaven*. Multiple notes in a column are dyads and chords.  
 
+<pre>
                                               w q q  
         8       u       7       y             o p p  
 i p z v b z p b n z p n d [ i d z p i p z p i u i i  
+</pre>
 
 What is this familiar melody?  
 
@@ -176,7 +178,6 @@ What is this familiar melody?
 **What happens if I call StdAudio.play(x) where x is greater than 1 or less than -1?** The value is *clipped*—it is replaced by the value 1.0 or -1.0, respectively.  
 
 **I get an ArrayOutOfBounds or NullPointerException error in RingBuffer. What could cause this? Does your constructor correctly initialize all of the instance variables?** Did you allocate memory for your array? Did you inadvertently redeclare an instance variable in a method or constructor, thereby shadowing the instance variable with the same name?  
-
 **I get a Ring buffer underflow error in GuitarHeroLite before I type any keystrokes. Why?** Did you forget to initialize the ring buffer to contain N zeros in your GuitarString constructor?  
 
 **When I run GuitarHeroLite for the first time, I hear no sound. What am I doing wrong?** Make sure you have tested with the main() provided for GuitarString. If that works, it is likely something wrong with pluck() since the main() provided for GuitarString does not test that method. To diagnose the problem, print out the values of sample() and check that they become nonzero after you type *lower case* characters 'a' and 'c'.  
