@@ -69,13 +69,13 @@ public static void main(String[] args)
 }
 ```
 
-```
+```console
 % java RingBuffer 10  
 Size after wrap-around is 10  
 55.0  
 ```
 
-```
+```console
 % java RingBuffer 100  
 Size after wrap-around is 100  
 5050.0  
@@ -120,7 +120,7 @@ public static void main(String[] args)
 }
 ```
 
-<pre>
+```console
 % java GuitarString 25  
      0   0.2000  
      1   0.4000  
@@ -147,7 +147,7 @@ public static void main(String[] args)
     22   0.2232  
     23   0.0744  
     24   0.2232  
-</pre>
+```
 
 **Interactive guitar player.** [GuitarHeroLite.java](GuitarHeroLite.java) is a sample GuitarString client that plays the guitar in real-time, using the keyboard to input notes. When the user types the lowercase letter 'a' or 'c', the program plucks the corresponding string. Since the combined result of several sound waves is the superposition of the individual sound waves, we play the sum of all string samples.  
 
