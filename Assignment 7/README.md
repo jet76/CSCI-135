@@ -28,15 +28,15 @@ Write a program to simulate plucking a guitar string using the Karplus-Strong al
 **Ring buffer.** Your first task is to create a data type to model the ring buffer. Write a class named RingBuffer that implements the following API:  
 
 <pre>
-  public class RingBuffer  
-  -----------------------------------------------------------------------------------------  
-          RingBuffer(int capacity)  // create an empty ring buffer, with given max capacity  
-      int size()                    // return number of items currently in the buffer  
-  boolean isEmpty()                 // is the buffer empty (size equals zero)?  
-  boolean isFull()                  // is the buffer full  (size equals capacity)?  
-     void enqueue(double x)         // add item x to the end  
-   double dequeue()                 // delete and return item from the front  
-   double peek()                    // return (but do not delete) item from the front  
+public class RingBuffer  
+-----------------------------------------------------------------------------------------  
+        RingBuffer(int capacity)  // create an empty ring buffer, with given max capacity  
+    int size()                    // return number of items currently in the buffer  
+boolean isEmpty()                 // is the buffer empty (size equals zero)?  
+boolean isFull()                  // is the buffer full  (size equals capacity)?  
+   void enqueue(double x)         // add item x to the end  
+ double dequeue()                 // delete and return item from the front  
+ double peek()                    // return (but do not delete) item from the front  
 </pre>
 
 Since the ring buffer has a known maximum capacity, implement it using a double array of that length. For efficiency, use *cyclic wrap-around*: Maintain one integer instance variable first that stores the index of the least recently inserted item; maintain a second integer instance variable last that stores the index one beyond the most recently inserted item. To insert an item, put it at index last and increment last. To remove an item, take it from index first and increment first. When either index equals capacity, make it wrap-around by changing the index to 0.  
@@ -47,27 +47,27 @@ Implement RingBuffer to throw an exception if the client attempts to dequeue() o
 
 You can test your RingBuffer data type on the following toy client, using the main() provided. It enqueues the numbers 1 through N, and then repeatedly dequeues the first two, and enqueues their sum.  
 
-  ```
-    public static void main(String[] args) 
-    {
-        int N = Integer.parseInt(args[0]);
-        RingBuffer buffer = new RingBuffer(N);  
-        for (int i = 1; i <= N; i++) 
-        {
-            buffer.enqueue(i);
-        }
-        double t = buffer.dequeue();
-        buffer.enqueue(t);
-        System.out.println("Size after wrap-around is " + buffer.size());
-        while (buffer.size() >= 2) 
-        {
-            double x = buffer.dequeue();
-            double y = buffer.dequeue();
-            buffer.enqueue(x + y);
-        }
-        System.out.println(buffer.peek());
-    }
-  ```
+```
+public static void main(String[] args) 
+{
+      int N = Integer.parseInt(args[0]);
+      RingBuffer buffer = new RingBuffer(N);  
+      for (int i = 1; i <= N; i++) 
+      {
+          buffer.enqueue(i);
+      }
+      double t = buffer.dequeue();
+      buffer.enqueue(t);
+      System.out.println("Size after wrap-around is " + buffer.size());
+      while (buffer.size() >= 2) 
+      {
+          double x = buffer.dequeue();
+          double y = buffer.dequeue();
+          buffer.enqueue(x + y);
+      }
+      System.out.println(buffer.peek());
+}
+```
 
 % java RingBuffer 10  
 Size after wrap-around is 10  
@@ -101,19 +101,19 @@ double sample()                        // return the current sample
 You can test your GuitarString data type with the following toy client, using the main() provided.  
 
 ```
-  public static void main(String[] args) 
-  {
-      int N = Integer.parseInt(args[0]);
-      double[] samples = { .2, .4, .5, .3, -.2, .4, .3, .0, -.1, -.3 };  
-      GuitarString testString = new GuitarString(samples);
-      for (int i = 0; i < N; i++) 
-      {
-          int t = testString.time();
-          double sample = testString.sample();
-          System.out.printf("%6d %8.4f\n", t, sample);
-          testString.tic();
-      }
-  }
+public static void main(String[] args) 
+{
+    int N = Integer.parseInt(args[0]);
+    double[] samples = { .2, .4, .5, .3, -.2, .4, .3, .0, -.1, -.3 };  
+    GuitarString testString = new GuitarString(samples);
+    for (int i = 0; i < N; i++) 
+    {
+        int t = testString.time();
+        double sample = testString.sample();
+        System.out.printf("%6d %8.4f\n", t, sample);
+        testString.tic();
+    }
+}
 ```
 
 % java GuitarString 25  
