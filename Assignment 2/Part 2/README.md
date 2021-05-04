@@ -118,3 +118,7 @@ NE-655 (0.12)
 **How do I create a String variable that has a double rounded to two decimal places?** You want to use the format() method. Here is an example: String bar = String.format("value = %.2f", foo);  
 
 **How do I compute the distance between two points?** You need to use the formula. In this formula p1 and p2 are the coordinates of one contact and q1 and q2 are the coordinates of another. You can take a square root in Java using Math.sqrt(). While there is a math method for taking powers, if you are just squaring a value, it is much more efficient just to use the normal multiplication operator.
+
+---
+
+This README was adapted from an assignment page at Montana Tech: https://katie.cs.mtech.edu/classes/archive/f13/csci135/assign/input/
