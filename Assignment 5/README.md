@@ -7,4 +7,4 @@ In this assignment, you will make a program that draw a Sierpinski triangle. You
 
 ---
 
-This README was adapted from one at Montana Tech: https://katie.cs.mtech.edu/classes/archive/f13/csci135/assign/sierpinski/
+This README was adapted from an assignment page at Montana Tech: https://katie.cs.mtech.edu/classes/archive/f13/csci135/assign/sierpinski/
