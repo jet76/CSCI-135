@@ -1,5 +1,5 @@
 
-*Part 1: Double or nothing
+# Part 1: Double or nothing
 
 You are currently X dollars in debt to your bookie but currently have only Y dollars to your name. Create a program DoubleOrNothing.java to calculate the *minimum* number of times you would have to go double-or-nothing at the roulette table to pay your debt. Your program should take two command-line arguments X and Y. X and Y are floating-point numbers representing the amounts in dollars and cents (e.g. 2345.32). Assume you go "all-in" on every bet, you win every bet, and the casino allows bets of any value. Assume X > 0 and Y > 0. Here some example runs:
 
