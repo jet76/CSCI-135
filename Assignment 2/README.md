@@ -4,3 +4,7 @@ In this assignment, you will gain experience reading from standard input, using 
 
 * Part 1: [Number Hunt](Part%201)  
 * Part 2: [RadarContacts](Part%202)  
+
+---
+
+This README was adapted from an assignment page at Montana Tech: https://katie.cs.mtech.edu/classes/archive/f13/csci135/assign/input/
