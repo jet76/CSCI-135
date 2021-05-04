@@ -62,3 +62,6 @@ For example, if the player has a speed of 100 and is currently at an *x-position
 
 **I can't print out an object's state to the console window because the instance variables are private. How do I do this?** You should implement toString() methods in your classes. These methods return a String containing all the details of an object's state. toString() gets called automatically whenever you try and append an object to a String, for example: System.out.println("OBJ + " + myObj)  
 
+---
+
+This README was adapted from an assignment page at Montana Tech: https://katie.cs.mtech.edu/classes/archive/f13/csci135/assign/alive/
