@@ -6,45 +6,53 @@ Your program shall take one integer command-line argument N, to control the dept
 
 **API specification.** Your program Sierpinski.java must be organized as a library of static methods with the following API:  
 
-   public class Sierpinski  
-   \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-  
-   void filledTriangle(double x, double y, double s)     // draw shaded equilateral triangle with  
-                                                            bottom vertex (x, y), side length s  
+<pre>
+public class Sierpinski  
+--------------------------------------------------------------------------------  
+void filledTriangle(double x, double y, double s)     // draw shaded equilateral triangle with  
+                                                         bottom vertex (x, y), side length s  
  
-   void sierpinski(int n, double x, double y, double s)  // draw one triangle, bottom vertex (x, y), side s;  
-                                                            recursively call itself three times to generate  
-                                                            the next order Sierpinski triangles above, left  
-                                                            and right of current triangle  
+void sierpinski(int n, double x, double y, double s)  // draw one triangle, bottom vertex (x, y), side s;  
+                                                         recursively call itself three times to generate  
+                                                         the next order Sierpinski triangles above, left  
+                                                         and right of current triangle  
   
-   void main(String[] args)                              // read order of recursion N as a command-line  
-                                                            argument; draw gray outline triangle with endpoints  
-                                                            (0, 0), (1, 0), and (1/2, √3/2); generate an  
-                                                            N-order Sierpinski triangle inside the outline  
-                                                              
+void main(String[] args)                              // read order of recursion N as a command-line  
+                                                         argument; draw gray outline triangle with endpoints  
+                                                         (0, 0), (1, 0), and (1/2, √3/2); generate an  
+                                                         N-order Sierpinski triangle inside the outline  
+</pre>
+
 **Examples.** Below are the target Sierpinski triangles for different values of *N*.  
 
-   % java Sierpinski 1	 
-   
+```console
+% java Sierpinski 1	 
+```   
    ![Sierpinski triangle of order 1](sierpinski1.png)  
-   
-   % java Sierpinski 2	
-   
+
+```console
+% java Sierpinski 2	
+```
    ![Sierpinski triangle of order 2](sierpinski2.png)  
-   
-   % java Sierpinski 3  
-   
+
+```console
+% java Sierpinski 3  
+```   
    ![Sierpinski triangle of order 3](sierpinski3.png)  
    
-   % java Sierpinski 4	
-   
+```console
+% java Sierpinski 4	
+```   
    ![Sierpinski triangle of order 4](sierpinski4.png)  
    
-   % java Sierpinski 5	
-   
+```console
+% java Sierpinski 5	
+```   
    ![Sierpinski triangle of order 5](sierpinski5.png)  
    
-   % java Sierpinski 6  
-   
+```console
+% java Sierpinski 6  
+```   
    ![Sierpinski triangle of order 6](sierpinski6.png)  
    
     
@@ -55,7 +63,6 @@ We can also apply this definition directly to the (set of white points in) Sierp
 ---
 
 This assignment page was adapted from one at Princeton: http://www.cs.princeton.edu/courses/archive/fall11/cos126/assignments/sierpinski.html
-
 
 ---
 
