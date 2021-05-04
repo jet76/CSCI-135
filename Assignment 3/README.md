@@ -12,6 +12,7 @@ You are an astronaut on the first ever manned mission to Mars. Your auto-pilot c
 
 Your program MarsLander.java shoud read in a game control file from standard input using [StdIn.java](StdIn.java). Here is an example game control file with comments at the end describing the order and meaning of the values:  
 
+```
 1000 500  
 mars_sky.jpg  
 ship.png ship_bottom.png ship_left.png ship_right.png ship_landed.png ship_crashed.png  
@@ -38,6 +39,7 @@ thrust.wav yay.wav explosion.wav
 \#  \<maximum survivable velocity\>  
 \#  \<thrust amount\>  
 \#  \<landing pad x center\> \<distance from center of landing pad to edge\>  
+```
 
 You should start by downloading the file [lander.zip](https://katie.cs.mtech.edu/classes/archive/f13/csci135/assign/lander/lander.zip). This file contains some example control files and the associated images/sounds. These files will need to be in the same directory where you run your program.  
 
