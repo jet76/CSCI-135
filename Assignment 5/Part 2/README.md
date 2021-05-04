@@ -21,10 +21,10 @@ In this part you will design and create your own recursive fractal. Your job is 
 
 **My function for Art.java takes several parameters, but the assignment says that I can only read in one command-line argument N. What should I do?** Choose a few of the best parameter values and do something like the following:  
 
-if      (N == 1) { x = 0.55; y = 0.75; n = 3; }
-else if (N == 2) { x = 0.55; y = 0.75; n = 5; }
-else if (N == 3) { x = 0.32; y = 0.71; n = 8; }
-else if ...
+if      (N == 1) { x = 0.55; y = 0.75; n = 3; }  
+else if (N == 2) { x = 0.55; y = 0.75; n = 5; }  
+else if (N == 3) { x = 0.32; y = 0.71; n = 8; }  
+else if ...  
 
 -----
 This assignment page was adapted from one at Princeton: http://www.cs.princeton.edu/courses/archive/fall11/cos126/assignments/sierpinski.html
