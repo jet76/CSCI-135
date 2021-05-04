@@ -44,3 +44,7 @@ Final amount: 1000.0
 **Do I need to use Math.random() or anything?** No. You can assume you win every bet placed so there is no randomness in this program.  
 
 **My program crashes if one or both of the arguments isn't a number (e.g. java DoubleOrNothing blah 3.14). Is that okay?** Yes. We'll eventually learn how to handle such cases, but not for awhile.
+
+---
+
+This README was adapted from an assignment page at Montana Tech: https://katie.cs.mtech.edu/classes/archive/f13/csci135/assign/loops/
