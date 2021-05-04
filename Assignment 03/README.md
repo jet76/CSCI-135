@@ -28,16 +28,16 @@ thrust.wav yay.wav explosion.wav
 \#  
 \# Description of values:  
 \#  \<width in pixels\> \<height in pixels\>  
-\#  <background image>  
-\#  <normal ship image> <bottom thrusters> <left thrusters> <right thrusters> <ship landed> <ship crashed>  
-\#  <horizontal distance, ship center to edge of thrusters> <vertical distance, ship center to bottom edge of thrusters>  
-\#  <ship starting x> <ship starting y>  
-\#  <starting fuel>  
-\#  <thruster sound> <good landing sound> <bad landing sound>  
-\#  <gravity term>  
-\#  <maximum survivable velocity>  
-\#  <thrust amount>  
-\#  <landing pad x center> <distance from center of landing pad to edge>  
+\#  \<background image\>  
+\#  \<normal ship image\> \<bottom thrusters\> \<left thrusters\> \<right thrusters\> \<ship landed\> \<ship crashed\>  
+\#  \<horizontal distance, ship center to edge of thrusters\> \<vertical distance, ship center to bottom edge of thrusters\>  
+\#  \<ship starting x\> \<ship starting y\>  
+\#  \<starting fuel\>  
+\#  \<thruster sound\> \<good landing sound\> \<bad landing sound\>  
+\#  \<gravity term\>  
+\#  \<maximum survivable velocity\>  
+\#  \<thrust amount\>  
+\#  \<landing pad x center\> \<distance from center of landing pad to edge\>  
 
 You should start by downloading the file [lander.zip](https://katie.cs.mtech.edu/classes/archive/f13/csci135/assign/lander/lander.zip). This file contains some example control files and the associated images/sounds. These files will need to be in the same directory where you run your program.  
 
