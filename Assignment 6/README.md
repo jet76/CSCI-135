@@ -16,6 +16,7 @@ The object of the game is to avoid a bunch of objects that are zooming around th
 
 **Control file.** Your client program StayingAlive.java shoud read in a game control file from standard input using [StdIn.java](StdIn.java). Here is an example game control file [hitchhiker.txt](hitchhiker.txt) with comments at the end describing the order and meaning of the values:  
 
+```
 stars.jpg  
 dont_panic_40.png 0.5 0.5 0.035 100  
 6  
@@ -27,15 +28,17 @@ asteroid_medium.png 0.6 0.6 0.030 0.002 -0.003
 asteroid_large.png 0.7 0.7 0.065 -0.0035 0.0025  
 
 # Hitchhikers Guide to the Galaxy: Avoid a bunch of asteroids  
-\#  \<background image\>  
-\#  \<player image\> \<player x-position\> \<player y-position\> \<player radius\> \<player speed factor\>  
-\#  \<number enemies\>  
-\#  \<enemy0 image\> \<enemy0 x-position\> \<enemy0 y-position\> \<enemy0 radius\> \<enemy0 x-velocity\> \<enemy0 y-velocity\>  
-\#  \<enemy1 image\> \<enemy1 x-position\> \<enemy1 y-position\> \<enemy1 radius\> \<enemy1 x-velocity\> \<enemy1 y-velocity\>  
-\#  ...  
+#  <background image>  
+#  <player image> <player x-position> <player y-position> <player radius> <player speed factor>  
+#  <number enemies>  
+#  <enemy0 image> <enemy0 x-position> <enemy0 y-position> <enemy0 radius> <enemy0 x-velocity> <enemy0 y-velocity>  
+#  <enemy1 image> <enemy1 x-position> <enemy1 y-position> <enemy1 radius> <enemy1 x-velocity> <enemy1 y-velocity>  
+#  ...  
+```
 
 **Console output.** Your StayingAlive.java program should output the intial game state to the console window:  
 
+```console
 % java StayingAlive < hitchhiker.txt  
 PLAYER: (0.5, 0.5) r=0.035 speed=100 dont_panic_40.png  
 ENEMY 0: (0.1, 0.1) vel (-0.0020, -0.0030) r=0.018 angle=258 asteroid_small.png  
@@ -44,6 +47,7 @@ ENEMY 2: (0.3, 0.3) vel (-0.0020, 0.0030) r=0.065 angle=37 asteroid_large.png
 ENEMY 3: (0.4, 0.4) vel (-0.0010, -0.0040) r=0.018 angle=98 asteroid_small.png  
 ENEMY 4: (0.6, 0.6) vel (0.0020, -0.0030) r=0.03 angle=301 asteroid_medium.png  
 ENEMY 5: (0.7, 0.7) vel (-0.0035, 0.0025) r=0.065 angle=5 asteroid_large.png  
+```
 
 **Canvas size and coordinates.** In this assignment, we'll leave the canvas size at the default size of 512 x 512 pixels. We will also use the default coordinate system which has the lower-left corner being (0.0, 0.0) and the upper-right corner being (1.0, 1.0). Thus in this assignment you do NOT need to call methods such as StdDraw.setCanvasSize(), StdDraw.setXscale(), or StdDraw.setYscale().  
 
