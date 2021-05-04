@@ -27,8 +27,11 @@ else if (N == 2) { x = 0.55; y = 0.75; n = 5; }
 else if (N == 3) { x = 0.32; y = 0.71; n = 8; }  
 else if ...  
 
------
-This assignment page was adapted from one at Princeton: http://www.cs.princeton.edu/courses/archive/fall11/cos126/assignments/sierpinski.html
+---
 
------
-This README was adapted from one at Montana Tech: https://katie.cs.mtech.edu/classes/archive/f13/csci135/assign/sierpinski/
+This assignment page was adapted from one at Princeton: http://www.cs.princeton.edu/courses/archive/fall11/cos126/assignments/sierpinski.html  
+
+
+---
+
+This README was adapted from an assignment page at Montana Tech: https://katie.cs.mtech.edu/classes/archive/f13/csci135/assign/sierpinski/  
