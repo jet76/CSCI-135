@@ -12,6 +12,7 @@ If the user inputs a number that isn't between 1 and 100, you should print "Inva
 
 Your program should optionally take a single integer command line argument. If a command line argument is given, use this number instead of drawing a random number. This will help you test your program since you can start with a known number. You can assume the command line argument (if given) will always be between 1 and 100. Here are some example runs:  
 
+```console
 % java NumberHunt  
 Guess a number between 1-100? 50  
 Ice cold.  
@@ -26,7 +27,9 @@ Hot.
 Guess a number between 1-100? 12  
 You nailed it!  
 It took you 6 guesses.  
+```
 
+```console
 % java NumberHunt 42  
 Guess a number between 1-100? 10  
 Ice cold.  
@@ -45,6 +48,7 @@ On fire.
 Guess a number between 1-100? 42  
 You nailed it!  
 It took you 8 guesses.  
+```
 
 **How do I read in a number from the user?** You need to use download the [StdIn.java](StdIn.java) class and place it in the same directory as your [NumberHunt.java](NumberHunt.java) program. When you want your program to read in an int from the user, call the method StdIn.readInt(). For an example program, see [OrderProduct.java](https://katie.cs.mtech.edu/classes/archive/f13/csci135/examples/OrderProduct.java).
 
