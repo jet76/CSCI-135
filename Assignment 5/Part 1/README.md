@@ -23,18 +23,18 @@ Your program shall take one integer command-line argument N, to control the dept
                                                               
 **Examples.** Below are the target Sierpinski triangles for different values of *N*.  
 
-   % java Sierpinski 1	
-   ![Sierpinski triangle of order 1](sierpinski1.png)
+   % java Sierpinski 1	 
+   ![Sierpinski triangle of order 1](sierpinski1.png)  
    % java Sierpinski 2	
-   ![Sierpinski triangle of order 2](sierpinski2.png)
-   % java Sierpinski 3  	
-   ![Sierpinski triangle of order 3](sierpinski3.png)
+   ![Sierpinski triangle of order 2](sierpinski2.png)  
+   % java Sierpinski 3  
+   ![Sierpinski triangle of order 3](sierpinski3.png)  
    % java Sierpinski 4	
-   ![Sierpinski triangle of order 4](sierpinski4.png)
+   ![Sierpinski triangle of order 4](sierpinski4.png)  
    % java Sierpinski 5	
-   ![Sierpinski triangle of order 5](sierpinski5.png)
-   % java Sierpinski 6
-   ![Sierpinski triangle of order 6](sierpinski6.png)
+   ![Sierpinski triangle of order 5](sierpinski5.png)  
+   % java Sierpinski 6  
+   ![Sierpinski triangle of order 6](sierpinski6.png)  
     
 **A diversion: fractal dimension.** In grade school, we learn that the dimension of a line segment is one, the dimension of a square is two, and the dimension of a cube is three. But you probably didn't learn what is really meant by *dimension*. How can we express what it means mathematically or computationally? Formally, we can define the *Hausdorff dimension* or *similarity dimension* of a self-similar figure by partitioning the figure into a number of self-similar pieces of smaller size. We define the dimension to be the log (# self similar pieces) / log (scaling factor in each spatial direction). For example, we can decompose the unit square into 4 smaller squares, each of side length 1/2; or we can decompose it into 25 squares, each of side length 1/5. Here, the number of self-similar pieces is 4 (or 25) and the scaling factor is 2 (or 5). Thus, the dimension of a square is 2 since log (4) / log(2) = log (25) / log (5) = 2. We can decompose the unit cube into 8 cubes, each of side length 1/2; or we can decompose it into 125 cubes, each of side length 1/5. Therefore, the dimension of a cube is log(8) / log (2) = log(125) / log(5) = 3.
 
