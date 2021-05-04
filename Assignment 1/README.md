@@ -5,3 +5,7 @@ The goal of this assignment is introduce you to programming with loops (such as 
 * Part 1: [Double or nothing](Part%201)  
 * Part 2: [Pattern](Part%202)  
 * Part 3: [Baby simulator](Part%203)  
+
+---
+
+This README was adapted from an assignment page at Montana Tech: https://katie.cs.mtech.edu/classes/archive/f13/csci135/assign/loops/
