@@ -4,11 +4,13 @@ You are a communications officer onboard an [E-3 Sentry AWACS](http://en.wikiped
 
 In addition to the location of every aircraft, your equipment also queries the transponder of all aircraft to obtain their call sign. Only friendly aircraft respond with a call sign. Other unknown or hostile aircraft are assigned a question mark as a call sign. Here is [radar4.txt](radar4.txt), a small example file showing four contacts, two friendly and two unknown:  
 
+```
 4  
 34754 12029 EJ-475  
 38002 11193 CX-120  
 11899 28929 ?  
 39222 10028 ?  
+```
 
 The first line of the example file specifies that there are four contacts in the data file. Each of the remaining lines gives the easting, northing and call sign (in that order). You can assume all eastings and northings are non-negative integers.  
 
