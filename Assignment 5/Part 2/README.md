@@ -2,9 +2,10 @@
 
 In this part you will design and create your own recursive fractal. Your job is to write a program Art.java that takes *one* integer command-line argument *N* (to control the depth of recursion) and produces a *recursive* pattern of your own choosing. It should work and stay within the drawing window for values 1 through 7. You are free to choose a geometric pattern (like, but not too similar to, Htree or Sierpinski) or a random construction. Your design should not be easy to generate with iteration alone. Originality and creativity in the design will be a factor in your grade.  
 
-* Your Art.java program must take one integer command-line argument N (expect it to be between 1 and 7).  \
+* Your Art.java program must take one integer command-line argument N (expect it to be between 1 and 7).  
 
 **I forget how to do geometry. Any hints?** Here are the coordinates of the critical endpoints. Click the image for a bigger version.  
+
 ![Sierpinski triangle geometry](sierpinski-geometry.png)  
 
 **How do I draw an equilateral triangle?** Use StdDraw.polygon() or StdDraw.filledPolygon() with appropriate parameters.  
