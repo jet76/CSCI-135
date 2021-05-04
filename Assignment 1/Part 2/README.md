@@ -4,16 +4,16 @@ Write a program Pattern.java that takes two integer command-line arguments N and
 
 ```console
 % java Pattern 4 4  
-\*.\*.\*.\*.  
-.\*.\*.\*.\*  
-\*.\*.\*.\*.  
-.\*.\*.\*.\*  
+*.*.*.*.  
+.*.*.*.*  
+*.*.*.*.  
+.*.*.*.*  
 ```
 
 ```console
 % java Pattern 5 2  
-\*.\*.\*.\*.\*.  
-.\*.\*.\*.\*.\*  
+*.*.*.*.*.  
+.*.*.*.*.*  
 ```
 
 ```console
