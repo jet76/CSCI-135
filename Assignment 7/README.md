@@ -27,6 +27,7 @@ Write a program to simulate plucking a guitar string using the Karplus-Strong al
 
 **Ring buffer.** Your first task is to create a data type to model the ring buffer. Write a class named RingBuffer that implements the following API:  
 
+<pre>
   public class RingBuffer  
   \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-  
             RingBuffer(int capacity)  // create an empty ring buffer, with given max capacity  
@@ -36,6 +37,7 @@ Write a program to simulate plucking a guitar string using the Karplus-Strong al
      void   enqueue(double x)         // add item x to the end  
    double   dequeue()                 // delete and return item from the front  
    double   peek()                    // return (but do not delete) item from the front  
+</pre>
 
 Since the ring buffer has a known maximum capacity, implement it using a double array of that length. For efficiency, use *cyclic wrap-around*: Maintain one integer instance variable first that stores the index of the least recently inserted item; maintain a second integer instance variable last that stores the index one beyond the most recently inserted item. To insert an item, put it at index last and increment last. To remove an item, take it from index first and increment first. When either index equals capacity, make it wrap-around by changing the index to 0.  
 
@@ -45,7 +47,7 @@ Implement RingBuffer to throw an exception if the client attempts to dequeue() o
 
 You can test your RingBuffer data type on the following toy client, using the main() provided. It enqueues the numbers 1 through N, and then repeatedly dequeues the first two, and enqueues their sum.  
 
-`
+```
   public static void main(String[] args) 
   {
       int N = Integer.parseInt(args[0]);
@@ -65,7 +67,7 @@ You can test your RingBuffer data type on the following toy client, using the ma
       }
       System.out.println(buffer.peek());
   }
-`
+```
 
 % java RingBuffer 10  
 Size after wrap-around is 10  
@@ -77,6 +79,7 @@ Size after wrap-around is 100
 
 **Guitar string.** Next, create a data type to model a vibrating guitar string. Write a class named GuitarString that implements the following API:  
 
+<pre>
   public class GuitarString
   \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-  
        GuitarString(double frequency)  // create a guitar string of the given frequency, using a sampling rate of 44,100  
@@ -85,6 +88,7 @@ Size after wrap-around is 100
   void tic()                           // advance the simulation one time step  
 double sample()                        // return the current sample  
    int time()                          // return number of tics  
+</pre>
 
 * *Constructors.* There are two ways to create a GuitarString object.    
   * The first constructor creates a RingBuffer of the desired capacity *N* (*the sampling rate* 44,100 divided by *frequency*, rounded to the nearest integer), and initializes it to represent a guitar string at rest by enqueueing *N* zeros.  
@@ -96,7 +100,7 @@ double sample()                        // return the current sample
 
 You can test your GuitarString data type with the following toy client, using the main() provided.  
 
-`
+```
   public static void main(String[] args) 
   {
       int N = Integer.parseInt(args[0]);
@@ -110,7 +114,7 @@ You can test your GuitarString data type with the following toy client, using th
           testString.tic();
       }
   }
-`
+```
 
 % java GuitarString 25  
      0   0.2000  
