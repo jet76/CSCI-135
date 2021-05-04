@@ -50,3 +50,7 @@ Possible progress steps:
 * You will also need to count up ALL the children in order to compute the average number of children needed to achieve the goal of both genders.
 * You will also need to keep a frequency counter for each of the four possible categories (2, 3, 4, 5 and more).
 * Nest the while loop inside an outer loop that repeats T times and add code to update child count and frequency counts after each trial.
+
+---
+
+This README was adapted from an assignment page at Montana Tech: https://katie.cs.mtech.edu/classes/archive/f13/csci135/assign/loops/
