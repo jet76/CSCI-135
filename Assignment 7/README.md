@@ -80,8 +80,8 @@ Size after wrap-around is 100
 **Guitar string.** Next, create a data type to model a vibrating guitar string. Write a class named GuitarString that implements the following API:  
 
 <pre>
-  public class GuitarString
-  ------------------------------------------------------------------------------------------------------------------------  
+public class GuitarString
+------------------------------------------------------------------------------------------------------------------------  
        GuitarString(double frequency)  // create a guitar string of the given frequency, using a sampling rate of 44,100  
        GuitarString(double[] init)     // create a guitar string whose size and initial values are given by the array  
   void pluck()                         // set the buffer to white noise  
@@ -116,6 +116,7 @@ public static void main(String[] args)
 }
 ```
 
+<pre>
 % java GuitarString 25  
      0   0.2000  
      1   0.4000  
@@ -142,7 +143,8 @@ public static void main(String[] args)
     22   0.2232  
     23   0.0744  
     24   0.2232  
-    
+</pre>
+
 **Interactive guitar player.** [GuitarHeroLite.java](GuitarHeroLite.java) is a sample GuitarString client that plays the guitar in real-time, using the keyboard to input notes. When the user types the lowercase letter 'a' or 'c', the program plucks the corresponding string. Since the combined result of several sound waves is the superposition of the individual sound waves, we play the sum of all string samples.  
 
 Write a program GuitarHero that is similar to GuitarHeroLite, but supports a total of 37 notes on the chromatic scale from 110Hz to 880Hz. In general, make the ith character of the string  
