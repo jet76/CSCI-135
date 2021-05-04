@@ -21,16 +21,20 @@ The *mode* command-line argument specifies the type of contacts that should be r
 
 The output report format first lists the call sign of the friendly aircraft followed by a colon. In mode 0 and mode 2, all non-friendly that are too close are listed (denoted by a question mark) followed by the bogey's distance (in kilometers) in parentheses. In mode 1, all friendly contacts are listed by their known call sign followed by the friendly's distance in parentheses. If a friendly contact does not have any contacts that are too close (base on the mode), it should not appear in the report. All distances should be reported in kilometers rounded to two decimal places. Contacts within the friendly and non-friendly sets for a given aircraft's report can appear in any order. Here are some example runs:  
 
+```console
 % java RadarContacts 1.0 2 < radar4.txt  
 Friendly aircraft: 2  
 Non-friendly aircraft: 2  
-
+```
+```console
 % java RadarContacts 2.0 2 < radar4.txt  
 Friendly aircraft: 2  
 Non-friendly aircraft: 2  
 CX-120:  
 ? (1.69)  
+```
 
+```console
 % java RadarContacts 3.5 2 < radar4.txt  
 Friendly aircraft: 2  
 Non-friendly aircraft: 2  
@@ -40,7 +44,9 @@ CX-120 (3.35)
 CX-120:  
 ? (1.69)  
 EJ-475 (3.35)  
+```
 
+```console
 % java RadarContacts 3.5 1 < radar4.txt  
 Friendly aircraft: 2  
 Non-friendly aircraft: 2  
@@ -49,15 +55,19 @@ CX-120 (3.35)
 
 CX-120:  
 EJ-475 (3.35)  
+```
 
+```console
 % java RadarContacts 3.5 0 < radar4.txt  
 Friendly aircraft: 2  
 Non-friendly aircraft: 2  
 CX-120:  
 ? (1.69)  
+```
 
 Here is some sample output from [radar397.txt](radar397.txt) which contains many more contacts:  
 
+```console
 % java RadarContacts 0.5 0 < radar397.txt  
 Friendly aircraft: 262  
 Non-friendly aircraft: 135  
@@ -69,7 +79,9 @@ YN-457:
 
 RO-952:  
 ? (0.12)  
+```
 
+```console
 % java RadarContacts 0.75 0 < radar397.txt  
 Friendly aircraft: 262  
 Non-friendly aircraft: 135  
@@ -94,7 +106,9 @@ RO-952:
 
 KG-168:  
 ? (0.70)  
+```
 
+```console
 % java RadarContacts 0.25 2 < radar397.txt  
 Friendly aircraft: 262  
 Non-friendly aircraft: 135  
@@ -106,6 +120,7 @@ RO-952:
 
 AR-490:  
 NE-655 (0.12)  
+```
 
 **How do I check a String variable to see if it is equal to something?** You'll want to use the equals() method. So for example if foo is a String, foo.equals("bar") would return true only if the variable foo contains exactly the string "bar". DO NOT use == to compare String variables! It is not doing what you think and will cause trouble.  
 
