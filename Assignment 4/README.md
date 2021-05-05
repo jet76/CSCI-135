@@ -190,6 +190,8 @@ Below 1% max (%) :    32.031290
 Below 5% max (%) :    54.441321  
 ```
 
+**Extra-credit.** Using only the audio provided in the [audio.zip](audio.zip) file, create an audio mashup. Submit your single best artistic creation along with the step-by-step commands used to generate it. The best mixes will be added to the hall of fame for this assignment. You may add additional effects to AudioEffects if it aids in the creation of your masterpiece. There are many additional sound effects you could add such as fading in/out, adjusting pitch, averaging samples, adding random noise, etc.  
+
 ---
 
 This README was adapted from an assignment page at Montana Tech: https://katie.cs.mtech.edu/classes/archive/f13/csci135/assign/audio/
