@@ -66,3 +66,11 @@ If you want to test your program with another "expansion pack", download [level_
 **After I crash, the final things I drew are not displayed. What is going on?** When StdDraw is in animation mode (as soon as your program calls StdDraw.show()), the graphics window is only updated on the next call to StdDRaw.show(). If you add a final call StdDraw.show(0) to your program, you should see your final drawing.  
 
 **I check for a crash if the bottom of my ship hits y = 0.0, but my ship just cruises on past without crashing. What is wrong?** Be sure you are not testing a double variable against a literal value with ==. It is very unlikely that your position will be exactly equal to the literal value. You probably should use an inequality instead.
+
+---
+
+**Extra credit possibilities:**  
+
+* Create a new game control file along with a new set of images and sounds. Describe your creation in the comments at the end of the control file. Submit all the files needed to run your new level.  
+* Create a new program that loads a more advanced control file like [this one](deluxe.txt). The end of the control file contains a list of rectangular obstacles that should be drawn. Your ship should crash if it hits any of the obstacles. You can pretend the ship is a rectangle for purposes of collision detection.  
+* Dream up other ways to make the game even more exciting.  
