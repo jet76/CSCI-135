@@ -105,3 +105,7 @@ size = 7, score = 240
 **Extra credit idea 2.** Make the game more interesting by adding additional types of playing pieces. For example, there could be a *bomb* piece that can be used to blow up part of your opponent's row. Other ideas would be a *wildcard* piece that matches any color or that increases a block's score multiplier.
 
 **Extra credit idea 3.** Change the game so you only score points when you make a run of so many gems. Once a run is made, the gems blow up and the player scores points based on the gems in the run. This will make the game continue as long as both players are able to complete runs to free up space in their gem row.
+
+---
+
+This README was adapted from an assignment page at Montana Tech: https://katie.cs.mtech.edu/classes/archive/f13/csci135/assign/gem/
