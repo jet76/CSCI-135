@@ -59,6 +59,7 @@ For example, if the player has a speed of 100 and is currently at an *x-position
 
 **Collision detection.** For simplicity, we assume the player and enemies are all circles. The game is over if the circle representing the player intersects with any enemy circle. This is similar to how I checked for the intersection of Ball objects in the lecture on [classes and objects](135-classes-objects.pdf).  
 
+---
 
 **How do I make the drawn text bold like yours?** You need to set the font used by StdDraw. A single call at the start of your program such as StdDraw.setFont(new Font("SansSerif", Font.BOLD, 18)) will do the job.  
 
