@@ -172,6 +172,8 @@ What is this familiar melody?
   nn//SS/ ..,,mmn //..,,m //..,,m nn//SS/ ..,,mmn   (S = space)  
 ```
 
+---
+
 **Do I need to follow the prescribed API?** Yes, we will be testing the methods in the API directly. If your method has a different signature or does not behave as specified, you will lose a substantial number of points. You may not add public methods to the API; however, you may add private methods (which are only accessible in the class in which they are declared).  
 
 **Where do I enter keystrokes in GuitarHeroLite and GuitarHero?** Be sure that the standard draw window has focus by clicking in it. Then, type the keystrokes.  
@@ -192,6 +194,17 @@ What is this familiar melody?
 **How do I use keyboard.indexOf(key)?** If keyboard is a String and key is a character, then keyboard.indexOf(key) return the integer index of the first occurrence of the character key in the string keyboard (or -1 if it does not occur).  
 
 **Should I hardwire the constants 44,100, 110.0, 440.0, 880.0, and 37 in my program?** No, in general, we will deduct if you use an unnamed constant (such as 37) in your program more than once. We recommend using the name SAMPLING_RATE for 44,100 and CONCERT_A for 440. But you need not name all of the constants in the formula 2<sup>(i - 24) / 12</sup>.  
+---
+
+**Extra credit performance** At the beginning of the next lab, perform a piece for your classmates (on my laptop, your laptop, or a lab computer). Partners may perform a duet and both will receive extra credit, or a solo for individual extra credit.  
+
+**Extra credit idea 1.** Write a program GuitarHeroVisualizer.java (by modifying GuitarHero.java) that plots the sound wave in real-time, as the user is playing the keyboard guitar. The output should look something like this, but change over time.  
+
+  ![Sampling from Karplus-Strong](guitar-samples.png)  
+  
+**Extra credit idea 2.** Modify the Karplus-Strong algorithm to synthesize a different instrument. Consider changing the excitation of the string (from white-noise to something more structured) or changing the averaging formula (from the average of the first two samples to a more complicated rule) or anything else you might imagine.  
+
+**Extra credit idea 3.** Make an actual game similar to the real Guitar Hero game. The game should indicate what keys to play and the timing of the notes. The video to the right shows the game one previous student came up with.  
 
 ---
 
