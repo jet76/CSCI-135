@@ -17,3 +17,7 @@ A level is completed when you reach the mall. There are nine levels and in each 
 **How do I read in a number from the user?** You need to use the [StdIn.java](StdIn.java) class and place it in the same directory as your Zombie.java program. When you want your program to read in a command from the user, call the method StdIn.readString(). For an example program, see [OrderProduct.java](OrderProduct.java).  
 
 **Extra-extra credit.** There is plenty of scope for improvements such as: a smarter zombie, multiple zombies, obstacles on the grid, etc. The zombie-infected world is your oyster!  
+
+---
+
+This README was adapted from an assignment page at Montana Tech: https://katie.cs.mtech.edu/classes/archive/f13/csci135/assign/loops/
