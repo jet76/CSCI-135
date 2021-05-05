@@ -193,7 +193,8 @@ What is this familiar melody?
 
 **How do I use keyboard.indexOf(key)?** If keyboard is a String and key is a character, then keyboard.indexOf(key) return the integer index of the first occurrence of the character key in the string keyboard (or -1 if it does not occur).  
 
-**Should I hardwire the constants 44,100, 110.0, 440.0, 880.0, and 37 in my program?** No, in general, we will deduct if you use an unnamed constant (such as 37) in your program more than once. We recommend using the name SAMPLING_RATE for 44,100 and CONCERT_A for 440. But you need not name all of the constants in the formula 2<sup>(i - 24) / 12</sup>.  
+**Should I hardwire the constants 44,100, 110.0, 440.0, 880.0, and 37 in my program?** No, in general, we will deduct if you use an unnamed constant (such as 37) in your program more than once. We recommend using the name SAMPLING_RATE for 44,100 and CONCERT_A for 440. But you need not name all of the constants in the formula 2<sup>(i - 24) / 12</sup>.
+
 ---
 
 **Extra credit performance** At the beginning of the next lab, perform a piece for your classmates (on my laptop, your laptop, or a lab computer). Partners may perform a duet and both will receive extra credit, or a solo for individual extra credit.  
