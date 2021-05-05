@@ -69,4 +69,13 @@ For example, if the player has a speed of 100 and is currently at an *x-position
 
 ---
 
+**Extra credit.** There are plenty of possibilities to improve the game. For example:
+* Include objects that the player tries to hit to gain points. Once the object is hit it disappears.
+* Add power-up or power-down objects (e.g. making the player's speed increase or decrease).
+* Add sound effects.
+* Add visual effects for events such as when the player dies.
+* Make enemy objects collide with one another.
+
+---
+
 This README was adapted from an assignment page at Montana Tech: https://katie.cs.mtech.edu/classes/archive/f13/csci135/assign/alive/
