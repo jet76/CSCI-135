@@ -74,3 +74,7 @@ If you want to test your program with another "expansion pack", download [level_
 * Create a new game control file along with a new set of images and sounds. Describe your creation in the comments at the end of the control file. Submit all the files needed to run your new level.  
 * Create a new program that loads a more advanced control file like [this one](deluxe.txt). The end of the control file contains a list of rectangular obstacles that should be drawn. Your ship should crash if it hits any of the obstacles. You can pretend the ship is a rectangle for purposes of collision detection.  
 * Dream up other ways to make the game even more exciting.  
+
+---
+
+This README was adapted from an assignment page at Montana Tech: https://katie.cs.mtech.edu/classes/archive/f13/csci135/assign/lander/
