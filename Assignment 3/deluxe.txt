@@ -1,0 +1,37 @@
+1000 500
+mars_sky.jpg
+ship.png ship_bottom.png ship_left.png ship_right.png ship_landed.png ship_crashed.png
+20 50
+500.0 400.0
+200
+thrust.wav yay.wav explosion.wav
+-0.1
+2.0
+0.5
+500 50
+36
+5
+380 70 20 70
+600 140 20 140
+290 120 100 20
+350 270 230 10
+-20 500 30 500
+# Deluxe game setup, now there are obstacles to avoid!  
+#
+# Here is the format of the fields:
+#  <width in pixels> <height in pixels>
+#  <background image>
+#  <normal ship image> <bottom thrusters> <left thrusters> <right thrusters> <ship landed> <ship crashed>
+#  <distance from center of ship to edge of landing pads> <distance from center of ship to bottom edge of landing pads>
+#  <starting fuel>
+#  <thruster sound> <good landing sound> <bad landing sound>
+#  <gravity term>
+#  <maximum survivable velocity on landing> 
+#  <thrust amount>
+#  <landing pad x center> <distance from center of landing pad to edge>
+#  NEW IN DELUXE:
+#  <distance from center of ship to edge of left/right thurster, used for collision detection>
+#  <number of rectangular obstacles>
+#  <rectangle x> <rectangle y> <rectangle width> <rectangle height>
+#  ...
+#  <rectangle x> <rectangle y> <rectangle width> <rectangle height>
