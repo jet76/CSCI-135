@@ -5,7 +5,7 @@ The goal of this assignment is introduce you to programming with loops (such as 
 * Part 1: [Double or nothing](Part%201)  
 * Part 2: [Pattern](Part%202)  
 * Part 3: [Baby simulator](Part%203)  
-* [Extra credit](Extra credit)
+* [Extra Credit](Extra%20credit)
 
 ---
 
