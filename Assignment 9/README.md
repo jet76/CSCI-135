@@ -84,24 +84,24 @@ size = 7, score = 240
 
 ---
 
-Do I need to follow the prescribed APIs? Yes. You may not add public methods to the API; however, you may add private methods if you wish (which are only accessible in the class in which they are declared).
+**Do I need to follow the prescribed APIs?** Yes. You may not add public methods to the API; however, you may add private methods if you wish (which are only accessible in the class in which they are declared).  
 
-How do I set the font type and size that StdDraw.text() uses? Our Gem point total used: StdDraw.setFont(new Font("SansSerif", Font.BOLD, 14))
+**How do I set the font type and size that StdDraw.text() uses?** Our Gem point total used: StdDraw.setFont(new Font("SansSerif", Font.BOLD, 14))  
 
-How does GemList.draw() figure out the x-coordinate for drawing the Gem objects? You can use the static method indexToX() we provided in the GemGame class.
+**How does GemList.draw() figure out the x-coordinate for drawing the Gem objects?** You can use the static method indexToX() we provided in the GemGame class.  
 
-What is the file GemList$Node.class? When you declare a nested class like Node, the Java compiler uses the $ symbol to mark its name.
+**What is the file GemList$Node.class?** When you declare a *nested* class like Node, the Java compiler uses the $ symbol to mark its name.
 
-Can I use Java's built in LinkedList class? Absolutely not! One of the main goals of this assignment is to gain experience writing and using linked structures. The Java libraries can only take you so far, and you will quickly discover applications which cannot be solved without devising your own linked structures. Stay tuned.
+**Can I use Java's built in LinkedList class?** Absolutely not! One of the main goals of this assignment is to gain experience writing and using linked structures. The Java libraries can only take you so far, and you will quickly discover applications which cannot be solved without devising your own linked structures. Stay tuned.
 
-When implementing my insertBefore() method, what special cases should I worry about? At a minimum you should worry about inserting into a completely empty list and inserting at the very start of the list.
+**When implementing my insertBefore() method, what special cases should I worry about?** At a minimum you should worry about inserting into a completely empty list and inserting at the very start of the list.
 
-When implementing draw() in GemList how do I determine the x-coordinate to draw each gem at? We have provided a static helper method indexToX() in GemGame. You can call this method to calculate the x-coordinate based on the index position of a gem in the linked list.
+**When implementing draw() in GemList how do I determine the x-coordinate to draw each gem at?** We have provided a static helper method indexToX() in GemGame. You can call this method to calculate the x-coordinate based on the index position of a gem in the linked list.
 
 ---
 
-Extra credit idea 1. Create a new version of the game in which the second player is the computer. When it is the computer's turn, it should evaluate the best possible location to put the gem. It should maximize the difference between the computer's score and the human's score. Hint: you'll probably want to implement a method in your GemList class that lets you delete an item at a specific index. This will allow you to temporarily insert the current gem into all possible locations in both player's gem lists. The video on the right shows an example of our computer opponent version.
+**Extra credit idea 1.** Create a new version of the game in which the second player is the computer. When it is the computer's turn, it should evaluate the best possible location to put the gem. It should maximize the difference between the computer's score and the human's score. Hint: you'll probably want to implement a method in your GemList class that lets you delete an item at a specific index. This will allow you to temporarily insert the current gem into all possible locations in both player's gem lists. The video on the right shows an example of our computer opponent version.
 
-Extra credit idea 2. Make the game more interesting by adding additional types of playing pieces. For example, there could be a bomb piece that can be used to blow up part of your opponent's row. Other ideas would be a wildcard piece that matches any color or that increases a block's score multiplier.
+**Extra credit idea 2.** Make the game more interesting by adding additional types of playing pieces. For example, there could be a *bomb* piece that can be used to blow up part of your opponent's row. Other ideas would be a *wildcard* piece that matches any color or that increases a block's score multiplier.
 
-Extra credit idea 3. Change the game so you only score points when you make a run of so many gems. Once a run is made, the gems blow up and the player scores points based on the gems in the run. This will make the game continue as long as both players are able to complete runs to free up space in their gem row.
+**Extra credit idea 3.** Change the game so you only score points when you make a run of so many gems. Once a run is made, the gems blow up and the player scores points based on the gems in the run. This will make the game continue as long as both players are able to complete runs to free up space in their gem row.
